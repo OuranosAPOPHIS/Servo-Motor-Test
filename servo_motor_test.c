@@ -2,10 +2,10 @@
  * Project: Aerial Platform for Overland Haul and Import System (APOPHIS)
  *
  *  Created On: Mar 28, 2017
- *  Last Updated:
+ *  Last Updated: April 1, 2017
  *      Author(s): Brandon Klefman
  *
- *      Purpose: Software for testing servo actuation.
+ *      Purpose: Software for testing servo actuation for payload deployment.
  *
  */
 
@@ -187,7 +187,7 @@ int main(void) {
 	//
 	// Turn off LED1, and enable the systick at 12 Hz to
 	// blink LED 4, signifying regular operation.
-	// The Systick cannot handle any value larger than 16MHz.
+	// The Systick cannot handle any period value larger than 16MHz.
 	TurnOffLED(1);
 	SysTickPeriodSet(g_SysClockSpeed / 12);
 	SysTickEnable();
