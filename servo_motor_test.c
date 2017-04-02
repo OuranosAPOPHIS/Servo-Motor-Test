@@ -211,6 +211,14 @@ int main(void) {
 		// First check for commands from Console.
 		if (g_ConsoleFlag)
 			Menu(g_CharConsole);
+
+		Menu('e');
+
+		SysCtlDelay(g_SysClockSpeed / 3 * 2);
+
+		Menu('x');
+
+		SysCtlDelay(g_SysClockSpeed / 3 * 2);
 	}
 
 	//
